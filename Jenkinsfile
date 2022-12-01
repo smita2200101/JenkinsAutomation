@@ -23,4 +23,10 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+        echo "This is always stage"
+        }
+        
+    }
 }
