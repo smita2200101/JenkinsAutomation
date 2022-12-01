@@ -8,6 +8,12 @@ pipeline {
             }
         }
         stage('Second') {
+            when {
+                expression {
+                BRANCH_NAME=='Dev'
+                }
+            }
+            
             steps {
                 echo "This is 2nd stage"
             }
